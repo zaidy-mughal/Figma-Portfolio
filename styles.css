@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     color: #0712ac;
     text-decoration: none;
@@ -48,7 +48,7 @@ body {
 
 
 .main-content h3{
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     color: rgb(14, 14, 170);
 }
 
