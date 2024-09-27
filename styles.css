@@ -59,14 +59,3 @@ body {
   padding: 0 10px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: left;
-  size: 20ch;
-}
-
-.social-links img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
