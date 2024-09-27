@@ -14,7 +14,8 @@ body {
 .container {
   width: 100%;
   padding: 20px;
-  max-width: 400px;
+  max-width: 375px;
+  max-height: 604px;
   margin: 0 auto;
 }
 
@@ -33,10 +34,11 @@ body {
 }
 
 .main-content {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: left;
   background-image: url(src/background.png);
   background-repeat: no-repeat;
+  padding: 0 10px;
 }
 
 .main-content h1 {
@@ -47,8 +49,8 @@ body {
 }
 
 .main-content h3 {
-  margin-bottom: 12px;
-  color: rgb(14, 14, 170);
+  margin-bottom: 15px;
+  color: rgb(10, 10, 109);
 }
 
 .main-content p {
@@ -56,6 +58,5 @@ body {
   line-height: 1.5;
   color: #666;
   margin-bottom: 30px;
-  padding: 0 10px;
 }
 
