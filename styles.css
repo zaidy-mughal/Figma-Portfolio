@@ -1,84 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
-    background-image: url(src/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  background-image: url(src/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
-    width: 100%;
-    padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .logo {
-    font-size: 23px;
-    font-weight: bold;
-    color: #0712ac;
-    text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+  color: #0712ac;
+  text-decoration: none;
 }
 
 .main-content {
-    margin-top: 40px;
-    text-align: left;
+  margin-top: 40px;
+  text-align: left;
 }
 
 .main-content h1 {
-    font-size: 45px;
-    color: #1A1A1A;
-    margin-bottom: 20px;
-    align-items: left;
+  font-size: 45px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  align-items: left;
 }
 
-
-.main-content h3{
-    margin-bottom: 12px;
-    color: rgb(14, 14, 170);
+.main-content h3 {
+  margin-bottom: 12px;
+  color: rgb(14, 14, 170);
 }
-
 
 .main-content p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 30px;
-    padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .social-links {
-    display: flex;
-    justify-content: left;
-    size: 20ch;
+  display: flex;
+  justify-content: left;
+  size: 20ch;
 }
-
 
 .social-links img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-
-
-
-
-
-
-
-
-
