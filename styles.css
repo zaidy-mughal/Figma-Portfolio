@@ -8,9 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f7f9fc;
   color: #333;
-  background-image: url(src/background.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 .container {
@@ -37,6 +35,8 @@ body {
 .main-content {
   margin-top: 40px;
   text-align: left;
+  background-image: url(src/background.png);
+  background-repeat: no-repeat;
 }
 
 .main-content h1 {
