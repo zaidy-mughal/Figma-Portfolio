@@ -12,7 +12,7 @@ body {
   height: 652px;
 }
 
-.main {
+.first-page {
   background-color: #fff;
   border-radius: 0 0 0 70px;
 }
@@ -102,3 +102,151 @@ header h1 {
 .social-links li {
   margin-right: 15px;
 }
+
+
+
+.all-projects{
+  width: 375px;
+  height: 2788px;
+  padding: 114px 24px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 327px;
+  height: 552px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.project img{
+  height: 220px;
+  width: 295px;
+}
+
+.project h3{
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700px;
+  color: #172b4d;
+  margin: 0;
+  padding: 0;
+  height:36px;
+  width: 236px;
+  margin-bottom: 12px;
+}
+
+.project .Multi-Post{
+  height: 80px;
+}
+
+.project .job-details{
+  height: 32px;
+  width: 238px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.project h4{
+  width: 55px;
+  height: 32px;
+  color: #344563;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.project .dot{
+  color: #c1c7d0;
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 32px;
+}
+
+.project .role, .year{
+  font-size: 13px;
+  line-height: 16px;
+  color: #7A869A;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+
+.project p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 76px;
+  width: 295px;
+  color: #344563;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+
+.project ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 12px 0;
+  padding: 0;
+}
+
+
+.project li{
+  border-radius: 8px;
+  background-color: #EBEBFF;
+  padding: 4px 12px;
+  color: #6070FF;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3%;
+  margin-right: 8px;
+  height: 24px;
+}
+
+
+.project .first{
+  width: 57px;
+}
+
+.project .second{
+  width: 49px;
+}
+
+.project .third{
+  width: 92px;
+}
+
+.project .see-button{
+  height: 48px;
+  width: 126px;
+  border-radius: 8px;
+  color: #6070FF;
+  padding: 12px;
+  border: 1px solid #6070FF;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin: 12px 0;
+}
+
+
