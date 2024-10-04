@@ -59,7 +59,7 @@ header h1 {
   width: 375px;
 }
 
-.main-content h2 {
+.main-content h2, .about h2 {
   font-size: 45px;
   color: #172b4d;
   align-items: left;
@@ -70,7 +70,7 @@ header h1 {
   width: 327px;
 }
 
-.main-content p {
+.main-content p, .about p {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -82,7 +82,7 @@ header h1 {
   margin: 12px 0 0 0;
 }
 
-.main-content h4 {
+.main-content h4, .about h4 {
   margin: 12px 0;
   width: 119px;
   height: 24px;
@@ -123,6 +123,10 @@ header h1 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
+}
+
+.project-wide{
+  height: 596px;
 }
 
 .project img{
@@ -233,7 +237,7 @@ header h1 {
   width: 92px;
 }
 
-.project .see-button{
+.project .see-button, .about .resume-button{
   height: 48px;
   width: 126px;
   border-radius: 8px;
@@ -247,6 +251,164 @@ header h1 {
   text-align: center;
   background-color: #FFFFFF;
   margin: 12px 0;
+}
+
+
+.about{
+  padding: 114px 24px;
+  margin: 0;
+  width: 375px;
+  height: 1162.15px;
+  background-color: #ffffff;
+  border-radius: 0 70px 0 0;
+}
+
+.about .resume-button{
+  width: 162px;
+  margin: 0;
+}
+
+
+
+.contact-me{
+  width: 375px;
+  height: 779px;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me .blue{
+  width: 375px;
+  height: 779px;
+  background-color: #6070FF;
+  border-radius: 70px 0 0 0;
+  color: #ffffff;
+  padding: 114px 24px;
+  background-image: url(src/contact\ form\ shapes-mobile.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.contact-me h2{
+  margin: 0;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+.contact-me p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+.contact-me .inputs{
+  width: 327px;
+  height: 48px;
+  border-radius: 5px;
+  margin: 9px 0;
+  padding: 0 18px;
+  border-style: none;
+}
+
+.inputs::placeholder{
+  color: #172B4D;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-me #textarea::placeholder{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #B3BAC5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-me #textarea{
+  height: 170px;
+  padding: 8px 12px;
+}
+
+.contact-me .get-in-touch{
+  width: 142px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  color: #6070FF;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: center;
+  font-weight: 500;
+  border-color: #6070FF;
+  border-style: none;
+}
+
+
+.all-skills{
+  height: 464.15px;
+  width: 327px;
+}
+
+
+.all-skills .skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 327px;
+  padding: 24px 13px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.skill h1{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.all-languages{
+  height: 248.15px;
+  width: 327px;
+  padding: 12px;
+  margin: 0;
+}
+
+.language{
+  display: flex;
+  width: 303px;
+  height: 66.72px;
+  border-radius: 8px;
+  background-color: #F7F7F9;
+  padding: 9px 11px;
+  margin-bottom: 12px;
+}
+
+.all-languages .type{
+  align-items: center;
+  padding: 15px;
+}
+
+.all-languages h2{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 215px;
 }
 
 
