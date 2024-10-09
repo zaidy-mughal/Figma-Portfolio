@@ -402,3 +402,17 @@ header h1 {
   height: 24px;
   width: 215px;
 }
+
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
