@@ -1,5 +1,5 @@
 * {
-  /* margin: auto; */
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -8,20 +8,24 @@ body {
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
-  width: 375px;
-  height: 652px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+  /* width: 375px;
+  height: 652px; */
 }
 
 .first-page {
   background-color: #fff;
-  border-radius: 0 0 0 70px;
+  border-radius: 0 0 0 98px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
+  height: clamp(48px, 6vw, 72px);
   margin: 0;
   padding: 0;
 }
@@ -54,38 +58,54 @@ header h1 {
   text-align: left;
   background-image: url(src/background.png);
   background-repeat: no-repeat;
-  padding: 114px 24px;
-  height: 604px;
-  width: 375px;
+  background-size: cover;
+  background-position: center;
+  padding: clamp(114px, 13.4vw + 4px, 289px) clamp(24px, 6.3vw + 4px, 260px);
+  height: 94vh;
+  width: 100vw;
+}
+
+.main-center {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
 }
 
 .main-content h2,
 .about h2 {
-  font-size: 45px;
+  font-size: clamp(45px, 3.2vw + 15px, 48px);
   color: #172b4d;
   align-items: left;
   line-height: 52px;
   margin: 0;
   padding: 0;
-  height: 150px;
-  width: 327px;
+
+  /* height: 100%; */
+  width: 100%;
+
+  /* height: 150px;
+  width: 327px; */
 }
 
 .main-content p,
 .about p {
-  font-size: 16px;
+  font-size: clamp(16px, 2vw + 5px, 20px);
   line-height: 24px;
   color: #344563;
   font-weight: 400;
-  height: 146px;
-  width: 327px;
+
+  /* height: 100%;
+  width: 100%; */
+
+  /* height: 146px;
+  width: 327px; */
   padding: 0;
-  margin: 12px 0 30px 0;
+  margin: 0;
 }
 
 .main-content h4,
 .about h4 {
-  margin: 12px 0;
+  margin: 2px 0;
   width: 119px;
   height: 24px;
   font-weight: 500;
@@ -99,6 +119,7 @@ header h1 {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .social-links li {
@@ -106,19 +127,24 @@ header h1 {
 }
 
 .all-projects {
-  width: 375px;
-  height: 2788px;
+  width: 100%;
+  height: auto;
   padding: 114px 24px;
   display: grid;
+  place-items: center;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+  align-items: start;
+  row-gap: 88px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
-  width: 327px;
+  width: 100%;
   height: 552px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -129,11 +155,6 @@ header h1 {
   height: 596px;
 }
 
-.project img {
-  height: 220px;
-  width: 295px;
-}
-
 .project h3 {
   font-size: 32px;
   line-height: 44px;
@@ -142,7 +163,7 @@ header h1 {
   margin: 0;
   padding: 0;
   height: 36px;
-  width: 236px;
+  width: 250px;
   margin-bottom: 12px;
 }
 
@@ -253,8 +274,8 @@ header h1 {
 
 .about {
   padding: 114px 24px;
-  margin: 0;
-  width: 375px;
+  margin: 0 auto;
+  width: 100vw;
   height: 1162.15px;
   background-color: #fff;
   border-radius: 0 70px 0 0;
@@ -265,8 +286,72 @@ header h1 {
   margin: 0;
 }
 
+.about .about-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.all-skills {
+  height: 464.15px;
+  width: 100%;
+}
+
+.all-skills .skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 327px;
+  padding: 24px 13px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.skill h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.all-languages {
+  height: 248.15px;
+  width: 327px;
+  padding: 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  width: 303px;
+  height: 66.72px;
+  border-radius: 8px;
+  background-color: #f7f7f9;
+  padding: 9px 11px;
+  margin-bottom: 12px;
+}
+
+.all-languages .type {
+  align-items: center;
+  padding: 15px;
+}
+
+.all-languages h2 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 100%;
+}
+
 .contact-me {
-  width: 375px;
+  width: 100%;
   height: 779px;
   background-color: #fff;
   margin: 0;
@@ -274,8 +359,10 @@ header h1 {
 }
 
 .contact-me .blue {
-  width: 375px;
-  height: 779px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   background-color: #6070ff;
   border-radius: 70px 0 0 0;
   color: #fff;
@@ -284,6 +371,8 @@ header h1 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-me h2 {
@@ -309,6 +398,14 @@ header h1 {
   margin: 9px 0;
   padding: 0 18px;
   border-style: none;
+}
+
+.contact-me form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputs::placeholder {
@@ -348,57 +445,190 @@ header h1 {
   border-style: none;
 }
 
-.all-skills {
-  height: 464.15px;
-  width: 327px;
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 40px;
+  }
+
+  .main-content {
+    text-align: left;
+    background-image: url(src/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .all-projects {
+    padding: 130px 60px;
+    margin: 0;
+    row-gap: 142px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+
+    /* grid-template: 448px / 50% 50%; */
+    padding: 24px;
+    height: 496px;
+    column-gap: 10px;
+    margin: 0;
+  }
+
+  .project-wide {
+    flex-direction: row-reverse;
+  }
+
+  .project .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project .details {
+    width: 100%;
+    padding: 24px;
+    height: 100%;
+  }
+
+  .project h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .project .Multi-Post {
+    height: auto;
+    width: 100%;
+  }
+
+  .project h4,
+  .year {
+    font-size: 18px;
+    line-height: 24px;
+    height: 40px;
+    padding: 8px 0;
+  }
+
+  .project .job-details {
+    width: 297px;
+  }
+
+  .project h4 {
+    width: 80px;
+  }
+
+  .project .role {
+    line-height: 24px;
+    width: 130px;
+    font-size: 18px;
+  }
+
+  .project .year {
+    width: 38px;
+  }
+
+  .project p {
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+    width: 100%;
+  }
+
+  .about {
+    display: grid;
+    grid-template: 448px / 39% 61%;
+    width: 100%;
+    height: auto;
+    padding: 130px 60px;
+    align-items: center;
+    column-gap: 12px;
+    border-radius: 0 120px 0 0;
+  }
+
+  .about-details h2 {
+    line-height: 52px;
+    font-size: 40px;
+  }
+
+  .language .type {
+    padding: 5px;
+  }
+
+  .about p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  .all-skills .skill {
+    width: 100%;
+  }
+
+  .all-languages {
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    gap: 12px;
+    padding: 24px 12px;
+  }
+
+  .language {
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+  }
+
+  .contact-me .blue {
+    width: 100%;
+    height: 100%;
+    border-radius: 130px 0 0 0;
+    padding: 130px 60px;
+    background-image: url(src/contact\ form\ background\ shapes@2x.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact-me .inputs {
+    width: 447px;
+  }
+
+  .contact-me p {
+    width: 568px;
+  }
 }
 
-.all-skills .skill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
-  width: 327px;
-  padding: 24px 13px;
-  border-bottom: 1px solid rgb(214, 214, 214);
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0 80px;
+  }
+
+  .all-projects {
+    padding: 142px;
+  }
+
+  .about {
+    padding: 142px;
+  }
+
+  .contact-me .blue {
+    padding: 142px;
+  }
 }
 
-.skill h1 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000;
-}
+@media screen and (min-width: 1200px) {
+  .main-content {
+    padding: 289px 260px;
+  }
 
-.all-languages {
-  height: 248.15px;
-  width: 327px;
-  padding: 12px;
-  margin: 0;
-}
+  .header {
+    padding: 0 140px;
+  }
 
-.language {
-  display: flex;
-  width: 303px;
-  height: 66.72px;
-  border-radius: 8px;
-  background-color: #f7f7f9;
-  padding: 9px 11px;
-  margin-bottom: 12px;
-}
-
-.all-languages .type {
-  align-items: center;
-  padding: 15px;
-}
-
-.all-languages h2 {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  margin: 0;
-  padding: 0;
-  height: 24px;
-  width: 215px;
+  .project .details {
+    height: 445px;
+  }
 }
