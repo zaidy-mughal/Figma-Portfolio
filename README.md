@@ -1,4 +1,3 @@
-
 # Responsive Portfolio Website
 
 This repository contains the code for a **Responsive Portfolio Website** built using **HTML** and **CSS**. Additionally, GitHub Actions and linters have been set up to maintain code quality and standards.
